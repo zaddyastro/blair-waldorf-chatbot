@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Queen B</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="askqueenb-page">
+    <div class="container">
+      <header>
+        <h1>Ask Queen B</h1>
+        <p class="tagline">I'm the best of the best. I'm Blair Waldorf!</p>
+      </header>
+
+      <div class="blair-container">
+        <img src="gossip girl GIF.gif" alt="Blair wearing the crown" class="blair-img" />
+      </div>
+
+      <div class="response">
+        <p class="response-text" id="blairResponse">Waldorf Wisdom here...</p>
+      </div>
+
+      <div class="chat-box">
+        <textarea
+          class="user-input"
+          placeholder="Ask, peasant..."
+          id="userQuestion"
+        ></textarea>
+        <br />
+        <button class="ask-button" id="askBtn">Blast</button>
+      </div>
+    </div>
+
+    <audio id="introAudio" src="bestofblair.mp3"></audio>
+    <audio id="clickSound" src="mouseclick.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

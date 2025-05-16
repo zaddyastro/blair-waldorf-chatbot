@@ -1,0 +1,156 @@
+/* ===== Styles for intro.html ===== */
+.intro-page {
+  background-color: black;
+  color: #00ffcc;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  overflow: hidden;
+}
+
+.intro-page .container {
+  text-align: center;
+  padding: 40px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.intro-page .loading-screen {
+  background: black;
+  color: #00ffcc;
+  font-family: 'Press Start 2P', monospace;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.intro-page .hidden {
+  display: none;
+}
+
+/* ===== Styles for index.html (Ask Queen B) ===== */
+.askqueenb-page {
+  background-color: black;
+  color: #00ffcc;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  overflow: visible; /* allow scrolling */
+}
+
+.askqueenb-page .container {
+  text-align: center;
+  padding: 40px 20px;
+  height: auto; /* no fixed height */
+  display: block; /* no flex to avoid alignment issues */
+  overflow: visible;
+}
+
+.askqueenb-page header h1 {
+  font-size: 2.5rem;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+  margin-bottom: 10px;
+}
+
+.askqueenb-page .tagline {
+  font-size: 1.1rem;
+  color: #ffffffcc;
+  margin-bottom: 30px;
+}
+
+.askqueenb-page .blair-container {
+  margin-bottom: 40px;
+}
+
+.askqueenb-page .blair-img {
+  width: 300px;
+  border: 3px double #ff00ff;
+  box-shadow: 0 0 10px #00ffff, 0 0 25px #ff00ff;
+  image-rendering: pixelated;
+  animation: floatyQueen 3s ease-in-out infinite;
+}
+
+@keyframes floatyQueen {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.askqueenb-page .chat-box {
+  margin-top: 20px;
+}
+
+.askqueenb-page .user-input {
+  width: 80%;
+  max-width: 500px;
+  height: 100px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  background: #111;
+  color: #0ff;
+  border: 2px dashed #ff00ff;
+  padding: 10px;
+  resize: none;
+  box-shadow: inset 0 0 5px #0ff;
+}
+
+.askqueenb-page .response {
+  margin-top: 30px;
+}
+
+.askqueenb-page .response-text {
+  font-style: italic;
+  color: #ccc;
+  background: #222;
+  padding: 15px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px dotted #0ff;
+}
+
+.askqueenb-page #blairResponse {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.askqueenb-page .loading {
+  cursor: wait;
+}
+.ask-button,
+.intro-button {
+  margin-top: 10px;
+  background: #ff00ff;
+  color: white;
+  font-family: 'Press Start 2P', monospace;
+  border: 4px outset #cc00cc;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #cc00cc;
+  transition: all 0.1s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.ask-button:active,
+.intro-button:active {
+  box-shadow: 1px 1px 0 #cc00cc;
+  transform: translate(3px, 3px);
+  border-style: inset;
+}
